@@ -131,19 +131,26 @@ html,body{
     position: absolute;
     bottom: 0px;
     left: 300px;
+    min-width: 600px;
     &_form {
       &_message {
         height: 50px;
         background-color: #FFFFFF;
         width: 80%;
         display: inline-block;
+        float: left;
+        border: 0px;
       }
         &_image {
           line-height: 50px;
-          padding-right: 10px;
           display: inline-block;
-          float: right;
-         }
+          float: left;
+          background-color: #FFFFFF;
+          &_file{
+            display: none;
+            width: 10px;
+          }
+        }
       &_send {
         line-height: 50px;
         background-color: #38AEF0;

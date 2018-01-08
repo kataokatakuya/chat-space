@@ -72,18 +72,14 @@
 
 .chat_footer
   .chat_footer_form
-    .chat_footer_form_message
+    %input{:class => "chat_footer_form_message", :type => "text", :placeholder => "type a message"}
       .chat_footer_form_image
-        %i.fa.fa-picture-o
-    .chat_footer_form_send
-      %p Send
+        %label
+          %i.fa.fa-picture-o
+          %input{:type => "file", :class => "chat_footer_form_image_file"}
+    %input{:class => "chat_footer_form_send", :type => "submit", :value => "Send"}
 
 
-
-
-    / %form
-    /   %input{:type => "text", :placeh older => "type a message"}
-    /     %i.fa.fa-picture-o
 
 
 
