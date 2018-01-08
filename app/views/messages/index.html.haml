@@ -1,0 +1,88 @@
+.chat__side
+
+
+  .chat__side__user
+    .chat__side__user__name
+      %h1 current_user_name
+      %i.fa.fa-cog
+      %i.fa.fa-pencil-square-o
+
+
+  .chat__side__groups
+
+    .chat__side__groups__group
+      .chat__side__groups__group__name
+        %p group
+      .chat__side__groups__group__message
+        %p message
+
+    .chat__side__groups__group
+      .chat__side__groups__group__name
+        %p group
+      .chat__side__groups__group__message
+        %p message
+
+    .chat__side__groups__group
+      .chat__side__groups__group__name
+        %p group
+      .chat__side__groups__group__message
+        %p message
+
+
+
+.chat__groups
+  .chat__groups__left
+    .chat__groups__left__group
+      %p group-name
+    .chat__groups__left__member
+      %p member
+  .chat__groups__edit-btn
+    %p Edit
+
+
+.chat__messages
+  .chat__messages__body
+    .chat__messages__body__top
+      .chat__messages__body__top__name
+        %p kataoka
+      .chat__messages__body__top__date
+        %p 2018/01/07 12:00
+    .chat__messages__body__message
+      %p こんにちは。お疲れ様です。
+
+  .chat__messages__body
+    .chat__messages__body__top
+      .chat__messages__body__top__name
+        %p suzuki
+      .chat__messages__body__top__date
+        %p 2018/01/07 12:05
+    .chat__messages__body__message
+      %p こんにちは。
+
+  .chat__messages__body
+    .chat__messages__body__top
+      .chat__messages__body__top__name
+        %p satou
+      .chat__messages__body__top__date
+        %p 2018/01/07 12:05
+    .chat__messages__body__message
+      %p こんにちは。お元気ですか？
+
+
+
+.chat__footer
+  .chat__footer__form
+    %input{:class => "chat__footer__form__message", :type => "text", :placeholder => "type a message"}
+      .chat__footer__form__image
+        %label
+          %i.fa.fa-picture-o
+          %input{:type => "file", :class => "chat__footer__form__image__file"}
+    %input{:class => "chat__footer__form__send", :type => "submit", :value => "Send"}
+
+
+
+
+
+
+
+
