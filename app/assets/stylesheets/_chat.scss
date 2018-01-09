@@ -14,6 +14,7 @@ html,body{
       padding: 0 0 0 20px;
 
       &__name {
+        display: flex;
         h1 {
           font-size: 16px;
           font-weight: bold;
@@ -21,16 +22,17 @@ html,body{
           color: #FFFFFF;
           display: inline-block;
         }
-        i {
-          display: inline-block;
-          float: right;
+        ul {
+          width: 100px;
           line-height: 100px;
-        }
-        .fa.fa-cog {
-          margin-right: 20px;
-        }
-        .fa-pencil-square-o {
-          margin-right: 10px;
+          li {
+            float: right;
+            padding: 0 5px;
+            .icon{
+              color: white;
+            }
+
+          }
         }
       }
     }
