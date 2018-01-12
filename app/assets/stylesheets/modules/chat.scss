@@ -1,6 +1,7 @@
 .chat {
   width: calc(100% - 300px);
   float: left;
+  height: 300px;
   .header {
     box-sizing: border-box;
     height: 100px;
@@ -39,9 +40,6 @@
   }
 
   .messages {
-    // position: absolute;
-    // bottom: 0px;
-    // left: 300px;
     background-color: #FAFAFA;
     box-sizing: border-box;
     padding: 46px 40px 0;
@@ -72,10 +70,14 @@
   }
 
   .form {
+    position: absolute;
+    bottom: 0px;
+    min-width: calc(100% - 300px);
     background-color: #DDDDDD;
     box-sizing: border-box;
     height: 90px;
     padding: 20px 50px 20px 40px;
+
     &__message {
       border: none;
       float: left;
