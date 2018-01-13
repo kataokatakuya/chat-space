@@ -3,6 +3,7 @@
   float: left;
   height: 300px;
   .header {
+    background-color: #f0fff8;
     box-sizing: border-box;
     height: 100px;
     padding: 0 40px;
@@ -40,10 +41,9 @@
   }
 
   .messages {
-    background-color: #FAFAFA;
     box-sizing: border-box;
     padding: 46px 40px 0;
-    height: calc(100% - 100px - 90px);
+    height: calc(100% - 100px);
     .message {
       .upper-message {
         display: flex;
