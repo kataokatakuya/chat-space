@@ -32,7 +32,7 @@ end
   end
 
   def set_group
-    @group = Grop.find(params[:id] )
+    @group = Group.find(params[:id] )
   end
 end
 
