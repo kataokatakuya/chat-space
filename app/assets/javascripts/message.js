@@ -42,10 +42,10 @@ $(function() {
       $('.chat .messages').append(html);
       $('.chat .messages').animate({scrollTop: $('.chat .messages')[0].scrollHeight}, "fast");
       $('.form__message').val('');
+    })
+    .fail(function(){
+      alert('error');
+    })
+    return false;
   })
-  .fail(function(){
-    alert('error');
-  })
-  return false;
-})
 });
