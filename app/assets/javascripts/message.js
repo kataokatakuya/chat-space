@@ -1,7 +1,7 @@
 $(function() {
   function buildHTML(message){
     var image = "";
-    if (message.image_url) {
+    if (message.image.url) {
       image = `<img src = "message.image.url">`;
     }
     var html = `<div class = "message" data-message-id = "${message.id}">
@@ -38,8 +38,8 @@ $(function() {
     })
     .done(function(data){
       var html = buildHTML(data);
-      $('.chat .messages').append(html);
-      $('.chat .messages').animate({scrollTop: $('.chat .messages')[0].scrollHeight}, "fast");
+      $('.chat.messages').append(html);
+      $('.chat.messages').animate({scrollTop: $('.chat.messages')[0].scrollHeight}, "fast");
       $('.form__message').val('');
     })
     .fail(function(){
@@ -51,18 +51,15 @@ $(function() {
   var interval = setInterval(function() {
     if (window.location.href.match(/\/groups\/\d+\/messages/)){
       var id = $('.message').last().data('message-id')
-      console.log(id);
       $.ajax({
         url: location.href,
         data: {id: id},
         dataType: 'json'
       })
       .done(function(data) {
-        console.log(data);
         var insertHTML = '';
         data.forEach(function(message) {
           if (message.id > id ) {
-            console.log('OK');
             insertHTML += buildHTML(message);
           }
         });
