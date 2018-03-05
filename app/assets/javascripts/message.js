@@ -39,7 +39,6 @@ $(function() {
     .done(function(data){
       var html = buildHTML(data);
       $('.chat.messages').append(html);
-      $('.chat.messages').animate({scrollTop: $('.chat.messages')[0].scrollHeight}, "fast");
       $('.form__message').val('');
     })
     .fail(function(){
@@ -72,5 +71,5 @@ $(function() {
     else {
       clearInterval(interval);
     }
-  } , 5000 );
+  } , 1000 );
 });
